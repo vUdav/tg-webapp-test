@@ -3,27 +3,20 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
   <script>
     var WebApp = window.Telegram.WebApp;
     var MainButton = WebApp.MainButton;
-    var BackButton = WebApp.BackButton;
 
     MainButton.show();
-    BackButton.show();
 
     MainButton.onClick(function() {
       WebApp.showAlert("Хорошо, ты нажал на главную кнопку.");
     });
-
-    BackButton.onClick(function() {
-      WebApp.showAlert("Нет пути назад!");
-      
-      BackButton.hide();
-    });
   </script>
 </head>
 <body>
-	123
+	<input />
 </body>
 </html>
