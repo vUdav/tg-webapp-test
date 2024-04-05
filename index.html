@@ -4,6 +4,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script>
+    var MainButton = WebApp.MainButton;
+    var BackButton = WebApp.BackButton;
+
+    MainButton.show();
+    BackButton.show();
+
+    MainButton.onClick(function() {
+      WebApp.showAlert("Хорошо, ты нажал на главную кнопку.");
+    });
+
+    BackButton.onClick(function() {
+      WebApp.showAlert("Нет пути назад!");
+      
+      BackButton.hide();
+    });
+  </script>
 </head>
 <body>
 	123
